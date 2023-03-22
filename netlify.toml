@@ -31,3 +31,8 @@ HUGO_VERSION = "0.92.0"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+[dev]
+command = "hugo -b http://127.0.0.1:8888/ -w --buildDrafts -F "
+framework = "#static"
+publish = "./public/"
